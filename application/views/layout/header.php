@@ -17,6 +17,7 @@
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="<?= base_url('assets/') ?>style.css">
 
+
 </head>
 
 <body>

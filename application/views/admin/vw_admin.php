@@ -55,6 +55,21 @@
             </div>
         </div>
     </header> 
+
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>Line Series</h3>
+                </div>
+                <div class="panel-body">
+                    <div id="chart1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     
     <!-- ##### Header Area End ##### -->
 
