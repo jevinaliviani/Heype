@@ -14,7 +14,7 @@
 					<input class="text" type="password" name="password1" 
 					value="<?= set_value('password1'); ?>" placeholder="Password">
 					<?= form_error('password1', '<small class="text-danger pl-3">', '</small>');?>
-					<input class="text w3lpass" type="password" name="passwor
+					<input class="text w3lpass" type="password" name="password2"
 					value="<?= set_value('password2'); ?>"placeholder="Confirm Password">
 					<?= form_error('password2', '<small class="text-danger pl-3">', '</small>');?>
 					
