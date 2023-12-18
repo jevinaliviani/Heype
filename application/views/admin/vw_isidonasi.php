@@ -36,7 +36,7 @@
 
                                         </ul>
                                     </li>
-
+                                    <li><a href="<?= base_url('Admin/Pesan/') ?>">Pesan</a></li>
                                     <li><a href="<?= base_url('Admin/Dokumentasi/') ?>">Dokumentasi</a></li>
                                     <li><a href="<?= base_url('Admin/Aboutus/') ?>">About Us</a></li>
                                     <li><a href="<?= base_url('Auth/logout/') ?>">Logout</a></li>

@@ -1,6 +1,5 @@
-
-         <!-- Navbar Area -->
-         <div class="delicious-main-menu">
+       <!-- Navbar Area -->
+       <div class="delicious-main-menu">
             <div class="classy-nav-container breakpoint-off">
                 <div class="container">
                     <!-- Menu -->
@@ -25,18 +24,9 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li class="active"><a href="<?= base_url('Admin/') ?>">Home</a></li>
-                                    <li><a href="#">Resep</a>
-                                        <ul class="dropdown">
-                                            <li><a href="<?= base_url('Admin/Sarapan/') ?>">Sarapan</a></li>
-                                            <li><a href="<?= base_url('Admin/Makanan/') ?>">Makanan</a></li>
-                                            <li><a href="<?= base_url('Admin/Dessert/') ?>">Dessert</a></li>
-                                            <li><a href="<?= base_url('Admin/Snack/') ?>">Snack</a></li>
-                                            <li><a href="<?= base_url('Admin/Minuman/') ?>">Minuman</a></li>
-
-                                        </ul>
-                                    </li>
-
+                                    <li class="active" ><a href="<?= base_url('Admin/') ?>">Home</a></li>
+                                    <li><a href="<?= base_url('Admin/Resep/') ?>">Resep</a></li>
+                                    <li><a href="<?= base_url('Admin/Pesan/') ?>">Pesan</a></li>
                                     <li><a href="<?= base_url('Admin/Dokumentasi/') ?>">Dokumentasi</a></li>
                                     <li><a href="<?= base_url('Admin/Aboutus/') ?>">About Us</a></li>
                                     <li><a href="<?= base_url('Auth/logout/') ?>">Logout</a></li>
@@ -54,22 +44,7 @@
                 </div>
             </div>
         </div>
-    </header> 
-
-    <div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3>Line Series</h3>
-                </div>
-                <div class="panel-body">
-                    <div id="chart1"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    </header>
     
     <!-- ##### Header Area End ##### -->
 

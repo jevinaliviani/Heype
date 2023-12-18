@@ -1,61 +1,3 @@
-
-         <!-- Navbar Area -->
-         <div class="delicious-main-menu">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container">
-                    <!-- Menu -->
-                    <nav class="classy-navbar justify-content-between" id="deliciousNav">
-
-                        <!-- Logo -->
-                        <a class="nav-brand" href="index.html"><img src="<?= base_url('assets/') ?>img/core-img/logo.png" alt=""></a>
-
-                        <!-- Navbar Toggler -->
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-
-                        <!-- Menu -->
-                        <div class="classy-menu">
-
-                            <!-- close btn -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-
-                            <!-- Nav Start -->
-                            <div class="classynav">
-                                <ul>
-                                    <li class="active"><a href="<?= base_url('User/') ?>">Home</a></li>
-                                    <li><a href="#">Resep</a>
-                                        <ul class="dropdown">
-                                            <li><a href="<?= base_url('User/Sarapan/') ?>">Sarapan</a></li>
-                                            <li><a href="<?= base_url('User/Makanan/') ?>">Makanan</a></li>
-                                            <li><a href="<?= base_url('User/Dessert/') ?>">Dessert</a></li>
-                                            <li><a href="<?= base_url('User/Snack/') ?>">Snack</a></li>
-                                            <li><a href="<?= base_url('User/Minuman/') ?>">Minuman</a></li>
-
-                                        </ul>
-                                    </li>
-
-                                    <li><a href="<?= base_url('User/Dokumentasi/') ?>">Dokumentasi</a></li>
-                                    <li><a href="<?= base_url('User/Aboutus/') ?>">About Us</a></li>
-                                    <li><a href="<?= base_url('Auth/logout/') ?>">Logout</a></li>
-                                </ul>
-
-                                <!-- Newsletter Form -->
-                                <div class="search-btn">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
-                                </div>
-
-                            </div>
-                            <!-- Nav End -->
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header> 
-    
     <style>
     .container-xxxl {
         border-radius: 10px; /* Add rounded corners */
@@ -81,38 +23,55 @@
                 <!-- <h5 class="section-title ff-secondary text-start text-dark fw-normal">UPLOAD RESEP</h5> -->
                 <h1 class="text-dark mb-4">Donasi</h1>
             </center>
-            <form class="d-flex flex-column align-items-center" enctype="multipart/form-data" method="post" action="process_recipe.php">
+            <form class="d-flex flex-column align-items-center" enctype="multipart/form-data" method="post" action="<?= base_url('User/Donasi');?>">
                 <div class="row g-3 justify-content-center">
                     <div class="col-md-12">
                         <div class="form-floating mb-3">
                             <label for="name">Nama </label>
-                            <input type="text" class="form-control" id="name" name="nama" placeholder="Nama Lengkap" style="width: 100%; font-size: 1.5rem;">
+                            <input type="text" class="form-control" id="name" name="nama" value="<?= set_value('nama'); ?>"
+                            placeholder="Nama Lengkap" style="width: 100%; font-size: 1.5rem;">
+                            <?= form_error('nama', '<small class="text-danger pl-3">', '</small>');?>
                         </div>
                     </div>
                     
                     <div class="col-md-12">
                         <div class="form-floating mb-3">
                             <label for="email">Email</label>
-                            <input type="text" class="form-control" id="email" name="email" placeholder=" Email" style="width: 100%; font-size: 1.5rem;">
+                            <input type="text" class="form-control" id="email" name="email" value="<?= set_value('email'); ?>"
+                            placeholder=" Email" style="width: 100%; font-size: 1.5rem;">
+                            <?= form_error('email', '<small class="text-danger pl-3">', '</small>');?>
                         </div>
                     </div>
 
                     <div class="col-md-12">
                         <div class="form-floating mb-3">
                             <label for="recipe_name">No Hp</label>
-                            <input type="text" class="form-control" id="recipe_name" name="no_hp" placeholder="Nomor Handphone" style="width: 100%; font-size: 1.5rem;">
+                            <input type="text" class="form-control" id="recipe_name" name="no_hp" value="<?= set_value('no_hp'); ?>"
+                            placeholder="Nomor Handphone" style="width: 100%; font-size: 1.5rem;">
+                            <?= form_error('no_hp', '<small class="text-danger pl-3">', '</small>');?>
                         </div>
                     </div>
-                    
+
+                    <div class="col-md-12">
+                        <div class="form-floating mb-3">
+                            <label for="recipe_name">Jumlah Donasi</label>
+                            <input type="text" class="form-control" id="recipe_name" name="jum_donasi" value="<?= set_value('jum_donasi'); ?>"
+                            placeholder="Nomor Handphone" style="width: 100%; font-size: 1.5rem;">
+                            <?= form_error('jum_donasi', '<small class="text-danger pl-3">', '</small>');?>
+                        </div>
+                    </div>
                     
                     <div class="col-md-12 mb-3">
                         <div class="form-floating">
                             <label for="recipe_photo">Bukti Pembayaran</label>
-                            <input type="file" class="form-control" id="recipe_photo" name="bukti_pembayaran" style="font-size: 1.5rem;">
+                            <input type="file" class="form-control" id="recipe_photo" value="<?= set_value('bukti_pembayaran'); ?>"
+                            name="bukti_pembayaran" style="font-size: 1.5rem;">
+                            <?= form_error('bukti_pembayaran', '<small class="text-danger pl-3">', '</small>');?>
                         </div>
                     </div>
                     <div class="col-12 mb-3">
-                    <a href="<?= base_url('User/')?>" class="btn btn-success w-100 py-3"  style="font-size: 1.5rem;">Submit</a>
+                    <button type="submit" name="tambah" class="btn btn-success w-100 py-3" 
+                    style="font-size: 1.5rem;">Submit</button>
                     </div>
                 </div>
             </form>

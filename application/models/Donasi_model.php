@@ -1,8 +1,8 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-class Interview_model extends CI_Model {
-  public $table = 'interview';
-  public $id = 'interview.id';
+class Donasi_model extends CI_Model {
+  public $table = 'donasi';
+  public $id = 'donasi.id';
   public function __construct()
   {
     parent::__construct();
@@ -15,10 +15,8 @@ class Interview_model extends CI_Model {
   }
   public function getById($id)
   {
-    $this->db->select('i.*, j.job_name as job');
-    $this->db->from('interview i');
-    $this->db->join('job j', 'i.job = j.id');
-    $this->db->where('i.id',$id);
+    $this->db->from($this->table);
+    $this->db->where('id',$id);
     $query = $this->db->get();
     return $query->row_array();
   }

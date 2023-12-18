@@ -9,6 +9,12 @@ class Admin extends CI_Controller {
         $this->load->view('layout2/footer');
 	}
 
+	public function Pesan()
+	{
+        $this->load->view('layout2/header');
+		$this->load->view('admin/vw_pesan');
+        $this->load->view('layout2/footer');
+	}
 	public function Dokumentasi()
 	{
         $this->load->view('layout2/header');
@@ -21,6 +27,13 @@ class Admin extends CI_Controller {
         $this->load->view('layout2/header');
 		$this->load->view('admin/vw_aboutus');
         $this->load->view('layout2/footer');
+	}
+
+	public function Resep()
+	{
+		$this->load->view('layout2/header');
+		$this->load->view('admin/vw_resep');
+		$this->load->view('layout2/footer');
 	}
 
 	public function Sarapan()
@@ -72,6 +85,12 @@ class Admin extends CI_Controller {
 		$this->load->view('layout2/footer');
 	}
 
+	public function UploadPesan(){
+		$this->load->view('layout2/header');
+		$this->load->view('admin/vw_uploadpesan');
+		$this->load->view('layout2/footer');
+	}
+	
 	public function Donasi()
 	{
 		$this->load->view('layout2/header');

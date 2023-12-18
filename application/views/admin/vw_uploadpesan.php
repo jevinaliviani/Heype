@@ -1,5 +1,5 @@
- <!-- Navbar Area -->
- <div class="delicious-main-menu">
+       <!-- Navbar Area -->
+       <div class="delicious-main-menu">
             <div class="classy-nav-container breakpoint-off">
                 <div class="container">
                     <!-- Menu -->
@@ -25,18 +25,9 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="<?= base_url('Admin/') ?>">Home</a></li>
-                                    <li><a href="#">Resep</a>
-                                        <ul class="dropdown">
-                                            <li><a href="<?= base_url('Admin/Sarapan/') ?>">Sarapan</a></li>
-                                            <li><a href="<? base_url('Admin/Makanan/') ?>">Makanan</a></li>
-                                            <li><a href="<?= base_url('Admin/Dessert/') ?>">Dessert</a></li>
-                                            <li><a href="<?= base_url('Admin/Snack/') ?>">Snack</a></li>
-                                            <li><a href="<?= base_url('Admin/Minuman/') ?>">Minuman</a></li>
-
-                                        </ul>
-                                    </li>
-                                    <li><a href="<?= base_url('Admin/Pesan/') ?>">Pesan</a></li>
-                                    <li  class="active"><a href="<?= base_url('Admin/Dokumentasi/') ?>">Dokumentasi</a></li>
+                                    <li><a href="<?= base_url('Admin/Resep/') ?>">Resep</a></li>
+                                    <li class="active"><a href="<?= base_url('Admin/Pesan/') ?>">Pesan</a></li>
+                                    <li><a href="<?= base_url('Admin/Dokumentasi/') ?>">Dokumentasi</a></li>
                                     <li><a href="<?= base_url('Admin/Aboutus/') ?>">About Us</a></li>
                                     <li><a href="<?= base_url('Auth/logout/') ?>">Logout</a></li>
                                 </ul>
@@ -54,7 +45,6 @@
             </div>
         </div>
     </header>
-    <!-- ##### Header Area End ##### -->
 
 
   <style>
@@ -94,7 +84,7 @@
     <div class="col-md-8 d-flex align-items-center">
       <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
         <center>
-          <h1 class="text-dark mb-5" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" ;">UPLOAD DOKUMENTASI KEGIATAN
+          <h1 class="text-dark mb-5" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" ;">UPLOAD MENU
           </h1>
         </center>
         <form class="d-flex flex-column align-items-center" enctype="multipart/form-data" method="post"
@@ -103,7 +93,7 @@
 
             <div class="col-md-12 mb-4">
               <div class="form-floating">
-                <label for="recipe_photo">Upload Recipe Photo</label>
+                <label for="recipe_photo">Upload Product Pict</label>
                 <input type="file" class="form-control" id="recipe_photo" name="recipe_photo"
                   style="height: 50px;  font-size: 1.5rem;">
               </div>
@@ -111,30 +101,22 @@
 
             <div class="col-md-12 mb-4">
               <div class="form-floating mb-3">
-                <label for="nama_kegiatan">Nama Kegiatan</label>
+                <label for="nama_kegiatan">Name of Product</label>
                 <input type="text" class="form-control" id="nama_kegiatan" name="nama_kegiatan"
                   placeholder="Nama Kegiatan" style="width: 100%;  font-size: 1.5rem;">
               </div>
             </div>
             <div class="col-md-12 mb-4">
               <div class="form-floating mb-3">
-                <label for="tanggal">Tanggal Kegiatan</label>
+                <label for="tanggal">Upload Price</label>
                 <input type="text" class="form-control" id="tanggal" name="tanggal" placeholder="Tanggal Kegiatan"
                   style="width: 100%; font-size: 1.5rem;">
               </div>
             </div>
 
-            <div class="col-md-12 mb-4">
-              <div class="form-floating">
-                <label for="deskripsi">Deskripsi Kegiatan</label>
-                <textarea class="form-control" id="deskripsi" name="deskripsi"
-                  placeholder="Letak deskripsi kegiatan disini" style="height: 150px; font-size: 1.5rem;"></textarea>
-              </div>
-            </div>
-
             <div class="col-12 mb-4">
               <a href="<?= base_url('Admin') ?>" class="btn btn-success w-100 py-3" style="font-size: 1.5rem;">Submit
-                Resep</a>
+                Menu</a>
             </div>
           </div>
         </form>
