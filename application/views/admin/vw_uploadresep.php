@@ -25,19 +25,9 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="<?= base_url('Admin/') ?>">Home</a></li>
-                                    <li class="active"><a href="#">Resep</a>
-                                        <ul class="dropdown">
-                                            <li><a href="<?= base_url('Admin/Sarapan/') ?>">Sarapan</a></li>
-                                            <li><a href="<?= base_url('Admin/Makanan/') ?>">Makanan</a></li>
-                                            <li><a href="<?= base_url('Admin/Dessert/') ?>">Dessert</a></li>
-                                            <li><a href="<?= base_url('Admin/Snack/') ?>">Snack</a></li>
-                                            <li><a href="<?= base_url('Admin/Minuman/') ?>">Minuman</a></li>
-
-                                        </ul>
-                                    </li>
+                                    <li><a href="<?= base_url('Admin/UploadPesan/') ?>">Upload Menu Pesanan</a></li>
                                     <li><a href="<?= base_url('Admin/Pesan/') ?>">Pesan</a></li>
                                     <li><a href="<?= base_url('Admin/Dokumentasi/') ?>">Dokumentasi</a></li>
-                                    <li><a href="<?= base_url('Admin/Aboutus/') ?>">About Us</a></li>
                                     <li><a href="<?= base_url('Auth/logout/') ?>">Logout</a></li>
                                 </ul>
 

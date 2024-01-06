@@ -25,10 +25,9 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="<?= base_url('Admin/') ?>">Home</a></li>
-                                    <li><a href="<?= base_url('Admin/Resep/') ?>">Resep</a></li>
-                                    <li class="active"><a href="<?= base_url('Admin/Pesan/') ?>">Pesan</a></li>
+                                    <li class="active"><a href="<?= base_url('Admin/UploadPesan/') ?>">Upload Menu Pesanan</a></li>
+                                    <li><a href="<?= base_url('Admin/Pesan/') ?>">Pesan</a></li>
                                     <li><a href="<?= base_url('Admin/Dokumentasi/') ?>">Dokumentasi</a></li>
-                                    <li><a href="<?= base_url('Admin/Aboutus/') ?>">About Us</a></li>
                                     <li><a href="<?= base_url('Auth/logout/') ?>">Logout</a></li>
                                 </ul>
 
@@ -103,13 +102,13 @@
               <div class="form-floating mb-3">
                 <label for="nama_kegiatan">Name of Product</label>
                 <input type="text" class="form-control" id="nama_kegiatan" name="nama_kegiatan"
-                  placeholder="Nama Kegiatan" style="width: 100%;  font-size: 1.5rem;">
+                  placeholder="Nama Produk" style="width: 100%;  font-size: 1.5rem;">
               </div>
             </div>
             <div class="col-md-12 mb-4">
               <div class="form-floating mb-3">
                 <label for="tanggal">Upload Price</label>
-                <input type="text" class="form-control" id="tanggal" name="tanggal" placeholder="Tanggal Kegiatan"
+                <input type="text" class="form-control" id="tanggal" name="tanggal" placeholder="Harga"
                   style="width: 100%; font-size: 1.5rem;">
               </div>
             </div>

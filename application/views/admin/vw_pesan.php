@@ -25,10 +25,9 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="<?= base_url('Admin/') ?>">Home</a></li>
-                                    <li><a href="<?= base_url('Admin/Resep/') ?>">Resep</a></li>
-                                    <li class="active" ><a href="<?= base_url('Admin/Pesan/') ?>">Pesan</a></li>
+                                    <li><a href="<?= base_url('Admin/UploadPesan/') ?>">Upload Menu Pesanan</a></li>
+                                    <li class="active"><a href="<?= base_url('Admin/Pesan/') ?>">Pesan</a></li>
                                     <li><a href="<?= base_url('Admin/Dokumentasi/') ?>">Dokumentasi</a></li>
-                                    <li><a href="<?= base_url('Admin/Aboutus/') ?>">About Us</a></li>
                                     <li><a href="<?= base_url('Auth/logout/') ?>">Logout</a></li>
                                 </ul>
 
@@ -45,237 +44,119 @@
             </div>
         </div>
     </header>
-
-
-      <!-- ============================================-->
-      <!-- jualan ============================-->
-      <section class="py-4 overflow-hidden">
-
-        <div class="container">
-          <div class="row h-100">
-            <div class="col-lg-7 mx-auto text-center mt-7 mb-5">
-              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm">Popular Menu</h5>
-            </div>
-            
-            <div class="col-12">
-              <div class="carousel slide" id="carouselPopularItems" data-bs-touch="false" data-bs-interval="false">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <div class="row gx-3 h-100 align-items-center">
-                     
-                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn1.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Blueberry Smoothie</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Dessert</span></div><span class="text-1000 fw-bold">Rp. 30.000</span>
-                          </div>
+    <div class="col-lg-12">
+                    <!-- Monthly Earnings -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row alig n-items-start">
+                                <div class="col-8">
+                                    <h5 class="card-title mb-9 fw-semibold"> Pendapatan Per Bulan </h5>
+                                    <h4 class="fw-semibold mb-3">Rp. 3.000.000</h4>
+                                    <div class="d-flex align-items-center pb-1">
+                                        <span
+                                            class="me-2 rounded-circle bg-light-danger round-20 d-flex align-items-center justify-content-center">
+                                            <i class="ti ti-arrow-down-right text-danger"></i>
+                                        </span>
+                                        <p class="text-dark me-1 fs-3 mb-0">+4%</p>
+                                        <p class="fs-3 mb-0">bulan lalu</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
+                                            <i class="ti ti-currency-dollar fs-6"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn2.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Sesame Chicken</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Food</span></div><span class="text-1000 fw-bold">Rp. 25.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                     <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn3.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Vegan Pancake</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Dessert</span></div><span class="text-1000 fw-bold">Rp. 15.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn4.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">High Protein Toast</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Breakfast</span></div><span class="text-1000 fw-bold">Rp. 10.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn5.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Tofu Salad Bowl</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Food</span></div><span class="text-1000 fw-bold">Rp. 20.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn6.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Low Fat Burger</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Snack</span></div><span class="text-1000 fw-bold">Rp. 25.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn7.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Chicken Broccoli Bowl</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Food</span></div><span class="text-1000 fw-bold">Rp. 30.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                     <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn8.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Body Detox Juice</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Drink</span></div><span class="text-1000 fw-bold">Rp. 15.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn9.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Mini Fruit Cup  </h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Dessert</span></div><span class="text-1000 fw-bold">Rp. 15.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn10.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Indonesian Fried Rice</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Food</span></div><span class="text-1000 fw-bold">Rp. 15.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn11.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Healthy Sandwitch</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Snack</span></div><span class="text-1000 fw-bold">Rp. 10.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn12.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Low Fat Ori Ramen</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Food</span></div><span class="text-1000 fw-bold">Rp. 35.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                     <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn1.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Blueberry Smoothie</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Dessert</span></div><span class="text-1000 fw-bold">Rp. 30.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn1.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Blueberry Smoothie</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Dessert</span></div><span class="text-1000 fw-bold">Rp. 30.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn1.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Blueberry Smoothie</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Dessert</span></div><span class="text-1000 fw-bold">Rp. 30.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn1.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Blueberry Smoothie</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Dessert</span></div><span class="text-1000 fw-bold">Rp. 30.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn1.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Blueberry Smoothie</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Dessert</span></div><span class="text-1000 fw-bold">Rp. 30.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                     <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn1.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Blueberry Smoothie</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Dessert</span></div><span class="text-1000 fw-bold">Rp. 30.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn1.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Blueberry Smoothie</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Dessert</span></div><span class="text-1000 fw-bold">Rp. 30.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
-                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="<?= base_url('assets/') ?>img/mn-img/mn1.jpeg"alt="..." />
-                          <div class="card-body ps-0">
-                            <h5 class="fw-bold text-1000 text-truncate mb-1">Blueberry Smoothie</h5>
-                            <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span class="text-primary">Dessert</span></div><span class="text-1000 fw-bold">Rp. 30.000</span>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Order now</a></div>
-                      </div>
-
-
+                        <div id="earning"></div>
                     </div>
-                  </div>
-
-                  <div class="col-12 text-center">
-                       <a class="btn delicious-btn mt-30" type="submit" href="<?= base_url('Admin/Uploadpesan') ?>" >Upload</a>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
+    <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="card w-100">
+                <div class="card-body p-4">
+                    <h5 class="card-title fw-semibold mb-4">Recent Transactions</h5>
+                    <div class="table-responsive">
+                        <table class="table text-nowrap mb-0 align-middle">
+                            <thead class="text-dark fs-4">
+                                <tr>
+                                    <th class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-0">Id</h6>
+                                    </th>
+                                    <th class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-0">Waktu</h6>
+                                    </th>
+                                    <th class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-0">Nama</h6>
+                                    </th>
+                                    <th class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-0">Jumlah</h6>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-0">1</h6>
+                                    </td>
+                                    <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-1">12 Maret 2023</h6>
+                                    </td>
+                                    <td class="border-bottom-0">
+                                        <p class="mb-0 fw-normal">Jevina Liviani</p>
+                                    </td>
+                                    <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-0 fs-4">Rp. 50.000</h6>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-0">2</h6>
+                                    </td>
+                                    <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-1">30 April 2023</h6>
+                                    </td>
+                                    <td class="border-bottom-0">
+                                        <p class="mb-0 fw-normal">Angwen Natasia</p>
+                                    </td>
+                                    <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-0 fs-4">Rp. 35.000</h6>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-0">3</h6>
+                                    </td>
+                                    <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-1">15 Agustus 2023</h6>
+                                    </td>
+                                    <td class="border-bottom-0">
+                                        <p class="mb-0 fw-normal">Aisyah Khairani</p>
+                                    </td>
+                                    <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-0 fs-4">Rp. 20.000</h6>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-0">4</h6>
+                                    </td>
+                                    <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-1">21 Oktober 2023</h6>
+                                    </td>
+                                    <td class="border-bottom-0">
+                                        <p class="mb-0 fw-normal">Tiara Novalizah</p>
+                                    </td>
+                                    <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-0 fs-4">Rp. 40.000</h6>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
